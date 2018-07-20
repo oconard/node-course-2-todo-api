@@ -43,8 +43,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
 
 
 
-db.collection('Users').find({name: 'Olivier'}).toArray().then((docs => {
-  console.log('Users');
+db.collection('Users').find({mnemonic: 'ORM'}).toArray().then((docs => {
+  console.log('');
   console.log(JSON.stringify(docs, undefined, 2));
 }), (err) => {
   console.log('Unable to fetch', err);
